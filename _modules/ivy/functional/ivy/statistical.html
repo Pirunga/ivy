@@ -381,20 +381,13 @@
 
 <span class="sd">    With :code:`ivy.Container` input:</span>
 
-<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([7., 77., 777.]), b=ivy.array([8., 88., 888.]))</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([7., 77., 777.]),\</span>
+<span class="sd">                        b=ivy.array([8., 88., 888.]))</span>
 <span class="sd">    &gt;&gt;&gt; y = ivy.min(x)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    {</span>
 <span class="sd">        a: ivy.array(7.),</span>
 <span class="sd">        b: ivy.array(8.)</span>
-<span class="sd">    }</span>
-
-<span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([8, 9, 10]), b=ivy.array([30, 19, 3]))</span>
-<span class="sd">    &gt;&gt;&gt; z = x.min()</span>
-<span class="sd">    &gt;&gt;&gt; print(z)  </span>
-<span class="sd">    {</span>
-<span class="sd">        a: ivy.array(8),</span>
-<span class="sd">        b: ivy.array(3)</span>
 <span class="sd">    }</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">current_backend</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">keepdims</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
