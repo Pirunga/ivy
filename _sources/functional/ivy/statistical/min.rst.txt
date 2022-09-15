@@ -5,8 +5,6 @@ min
 
 .. autofunction:: ivy.array.array_methods.min
 
-.. autofunction:: ivy.container.container_methods.static_min
-
 .. autofunction:: ivy.container.container_methods.min
 |
 | **Supported Frameworks:**
@@ -37,5 +35,4 @@ min
    min/min_functional.rst
    min/min_array.rst
    min/min_container.rst
-   min/static_min_container.rst
 
